@@ -1,0 +1,94 @@
+/* AdvancedSettings.css */
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--background-color); /* Dark blue background */
+    color: var(--text-color); /* White text */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .input-field, .select-field, .submit-button {
+    padding: 12px 20px;
+    margin: 5px 0;
+    border-radius: 30px; /* More pronounced rounded corners */
+    border: 2px solid transparent; /* No border visible */
+    outline: none;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  .input-field:focus, .select-field:focus {
+    border-color: var(--primary-color); /* Highlight focus with primary color */
+  }
+  
+  .input-field {
+    background-color: #fff; /* Light background for input */
+    color: #333; /* Darker text for contrast */
+  }
+  
+  .submit-button {
+    background-color: var(--primary-color); /* Primary color background */
+    color: #fff; /* White text */
+    cursor: pointer;
+    font-weight: bold; /* Make button text bold */
+    text-transform: uppercase; /* Uppercase button text */
+    letter-spacing: 1px; /* Spacing for aesthetics */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover */
+  }
+  
+  .submit-button:hover {
+    background-color: var(--secondary-color); /* Change to secondary color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  .container {
+    display: flex;
+    align-items: center; /* Align checkbox labels */
+    font-size: 16px;
+    user-select: none; /* Prevent text selection */
+  }
+  
+  .container input[type='checkbox'] {
+    margin-right: 10px; /* Space between checkbox and label */
+  }
+  
+  /* Custom checkbox styling */
+  .checkmark {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0; /* Prevent size reduction */
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: var(--primary-color);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+    left: 7px;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+  }
+  
