@@ -1,0 +1,31 @@
+/* URLInput.css */
+.url-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .url-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 2px solid var(--primary-color);
+    outline: none;
+  }
+  
+  .url-submit-button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .url-submit-button:hover {
+    background-color: var(--secondary-color);
+  }
+  
